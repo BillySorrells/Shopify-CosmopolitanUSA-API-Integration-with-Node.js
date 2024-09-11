@@ -1,0 +1,14 @@
+app cosmopolitanApi {
+  wasp: {
+    version: "^0.13.0"
+  },
+  title: "cosmopolitanApi",
+  client: {
+    rootComponent: import { Layout } from "@src/Layout.jsx",
+  },
+  db: {
+    prisma: {
+      clientPreviewFeatures: ["extendedWhereUnique"]
+    }
+  },
+}
